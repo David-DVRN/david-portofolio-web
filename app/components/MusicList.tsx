@@ -1,7 +1,7 @@
 'use client';
 
 import MusicItem from './MusicItem'; // Atau '../MusicItem' tergantung lokasi file
-import { Music } from '@/types/music'; // sesuaikan dengan path
+import { Music } from '../types/music'; // sesuaikan dengan path
 
 
 

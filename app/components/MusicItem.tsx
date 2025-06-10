@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useRef } from 'react';
 import AudioVisualizer from './AudioVisualizer';
-import { Music } from '@/types/music'; // sesuaikan dengan path
+import { Music } from '../types/music'; // sesuaikan dengan path
 
 export default function MusicItem({ music }: { music: Music }) {
   const audioRef = useRef<HTMLAudioElement>(null);
