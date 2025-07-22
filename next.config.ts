@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: [], // kosong karena pakai gambar lokal dari /public
+    domains: ['res.cloudinary.com'], // kosong karena pakai gambar lokal dari /public
   },
 };
 

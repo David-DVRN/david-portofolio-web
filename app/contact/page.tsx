@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat p-4"
+      className="h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('backgrounds/DVRN Web Background.jpg')" }}
     >
       <div className="max-w-2xl bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg text-white">

@@ -47,9 +47,12 @@ export default function MusicItem({ music }: { music: Music }) {
 
           {/* Audio Player full width */}
           <audio ref={audioRef} controls className="mt-2 w-full">
-            <source src={music.audio_url} type="audio/wav" />
+            <source src={`/api/proxy-audio?url=${encodeURIComponent(music.audio_url)}`} type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
+
+
+
         </div>
       </div>
     </div>
