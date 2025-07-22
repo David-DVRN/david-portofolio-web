@@ -2,10 +2,15 @@ import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import type { NextRequest } from 'next/server';
 
-export async function DELETE(req: NextRequest, context: { params: { id: string } }) {
-  const id = parseInt(context.params.id);
+export async function DELETE(req: NextRequest) {
+  const id = req.nextUrl.pathname.split('/').pop(); // ambil [id] dari URL
+
+  if (!id || isNaN(Number(id))) {
+    return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
+  }
+
   try {
-    await prisma.musics.delete({ where: { id } });
+    await prisma.musics.delete({ where: { id: Number(id) } });
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Delete error:', error);
