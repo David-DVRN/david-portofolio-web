@@ -22,7 +22,7 @@ export default function ContactPage() {
         <p className="mb-2">
           My WhatsApp:{' '}
           <a
-            href="https://wa.me/08123456789"
+            href="https://wa.me/081315930448"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-green-300 hover:text-green-400"
@@ -34,7 +34,7 @@ export default function ContactPage() {
         <p className="mb-2">
           Follow me on SoundCloud:{' '}
           <a
-            href="https://soundcloud.com/dvrn2002"
+            href="https://soundcloud.com/dvrn_music"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-orange-300 hover:text-orange-400"
